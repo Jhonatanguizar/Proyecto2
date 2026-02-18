@@ -9,7 +9,7 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <ul style="">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="html5.html">HTML5</a></li>
             </ul>
@@ -21,7 +21,7 @@
     <div>
     <section>
         <table>
-            <tr style="background-color: rgb(246, 234, 66)">
+            <tr style="background-color: rgb(147, 81, 246)">
                 <td><img src="img/html1.jpg" width="180" height="200"></td>
                 <td>
                     <H2>¿Qué es un gestor de contenido?</H2>
@@ -38,13 +38,14 @@
                 </td>
                 
                 <td>
-                    <h2>Fundamentos</h2><ul>
+                    <h2>Fundamentos</h2>
+                    <ul>
                     <li>Conceptos básico</li>
-                    <ul><li>Estructura de documento</li></ul>
-                    <ul><li>Etiquetas y elementos</li></ul>
-                    <li>Atributos</li>
-                    <li>Sintaxis HTML DOCTYPE y HTML5</li>
-                    <li>Comentarios</li>
+                    <ul><li>Estructura de documento: Todo documento HTML tiene una estructura base que organiza el contenido de forma jerárquica. Se divide en dos secciones principales: el head (cabecera), que contiene metadatos, título y enlaces a recursos, y el body (cuerpo), donde va todo el contenido visible de la página.</li></ul>
+                    <ul><li>Etiquetas y elementos: Las etiquetas son las instrucciones que el navegador interpreta, y se escriben entre corchetes angulares < >. Un elemento está formado por una etiqueta de apertura, el contenido y una etiqueta de cierre, por ejemplo p Hola mundo /p. Algunas etiquetas son "vacías" y no necesitan cierre, como br o img.</li></ul>
+                    <li>Atributos: Los atributos proporcionan información adicional a los elementos. Se escriben dentro de la etiqueta de apertura con el formato nombre="valor". Por ejemplo, a href="https://ejemplo.com">Enlace /a usa el atributo href para definir el destino del enlace. Un elemento puede tener varios atributos a la vez.</li>
+                    <li>Sintaxis HTML DOCTYPE y HTML5: La declaración !DOCTYPE html va siempre en la primera línea del documento e indica al navegador qué versión de HTML se está usando. En HTML5 esta declaración es muy sencilla (en versiones anteriores era mucho más larga). Le dice al navegador que renderice la página en modo estándar.</li>
+                    <li>Comentarios:Los comentarios permiten dejar notas en el código que el navegador ignora completamente. Se escriben así: !-- Este es un comentario --. Son útiles para documentar el código, explicar secciones o desactivar temporalmente partes del HTML.</li>
                     </ul>
 
                 </td>
@@ -54,30 +55,32 @@
             <table>
             <tr>
                 <td>
+                    
                     <h2>Elementos HTML</h2>
                     <ul>
                         <li>Elementos de texto</li>
-                        <li>Encabezado</li>
-                        <li>Párrafos y saltos</li>
-                        <li>Formato de texto</li>
-                        <li>listas</li>
-                        <li>Enlaces(Hipervinculos)</li>
-                        <li>Imagenes y Multimedia</li>
-                        <li>Tablas</li>
+                        <li>Encabezado: HTML tiene 6 niveles de encabezados, del h1 al h6. El h1 es el más importante y grande, y el h6 el menor. Se usan para estructurar jerárquicamente el contenido, como capítulos y subcapítulos. Lo recomendable es usar solo un h1 por página.</li>
+                        <li>Párrafos y saltos:El elemento p define un párrafo y el navegador agrega automáticamente un espacio antes y después de él. Cuando necesitas un simple salto de línea sin crear un nuevo párrafo, se usa br, que es una etiqueta vacía (no tiene cierre). También existe hr que dibuja una línea horizontal para separar secciones.</li>
+                        <li>Formato de texto: ofrece varias etiquetas para dar formato al texto, algunas con significado semántico y otras solo visuales como strong para negrita(solo para texto importante), em para cursiva(Solo para enfatizar texto), b para negrita(Solo visual), i para cursiva(solo visual) u subrayado, mark marcado, sup superindice y sub subindice</li>
+                        <li>listas:ul muestra elementos con viñetas. Lista ordenada ol muestra elementos numerados.Cada elemento de la lista se define con ul </li>
+                        <li>Enlaces(Hipervinculos): Se crean con la etiqueta a y el atributo href define el destino. Con target="_blank" el enlace se abre en una nueva pestaña</li>
+                        <li>Imagenes y Multimedia: imágenes se insertan con img, una etiqueta vacía. El atributo src indica la ruta de la imagen y alt es el texto alternativo (importante para accesibilidad y SEO). </li>
+                        <li>Tablas: Las tablas se construyen con varias etiquetas como que trabajan juntas como table que es el contenedor principal, thead que es el encabezado, tbody que es la seccion del cuerpo, tr que crea una fila, th crea una celda de encabezado, td crea la celda de datos</li>
                     </ul>
                 </td>
+            </tr><tr>
                 <td>
                     <h2>Formularios</h2>
                         <ul>
                             <li>Estructura de formularios</li>
                             <li>Tipos de input</li>
                             <ul>
-                                <li>Texto, Email, Contraseña</li>
-                                <li>Checkbox, Radio, Select</li>
-                                <li>Fecha, Color, rango</li>
+                                <li>Texto, Email, Contraseña:Los más básicos para capturar información del usuario. como input type ="email" placeholder="correo@compañia.com"</li>
+                                <li>Checkbox, Radio, Select: El checkbox permite seleccionar múltiples opciones y el radio solo una dentro del grupo (comparten el mismo name).</li>
+                                <li>Fecha, Color, rango: Inputs especiales que el navegador renderiza con controles visuales propios.</li>
                             </ul>
-                            <li>Validación de formularios</li>
-                            <li>Accesibilidad en formularios</li>
+                            <li>Validación de formularios: permite validar campos sin necesidad de JavaScript usando atributos directamente en los inputs como required, minlength/maxlength, min/max, pattern, type</li>
+                            <li>Accesibilidad en formularios: La accesibilidad asegura que personas con discapacidades puedan usar los formularios correctamente, especialmente con lectores de pantalla. </li>
                         </ul>
                 </td>
             </tr>
